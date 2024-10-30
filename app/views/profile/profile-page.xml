@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Profile" />
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Your Progress" class="h2 mb-4" />
+            <GridLayout rows="auto" columns="*, *, *" class="text-center mb-4">
+                <StackLayout col="0">
+                    <Label text="12" class="h1" />
+                    <Label text="Lessons" class="body" />
+                </StackLayout>
+                <StackLayout col="1">
+                    <Label text="45" class="h1" />
+                    <Label text="Quizzes" class="body" />
+                </StackLayout>
+                <StackLayout col="2">
+                    <Label text="89%" class="h1" />
+                    <Label text="Accuracy" class="body" />
+                </StackLayout>
+            </GridLayout>
+            <Button text="View Statistics" class="btn btn-primary mb-4" tap="{{ viewStats }}" />
+            <Button text="Settings" class="btn btn-outline mb-4" tap="{{ openSettings }}" />
+        </StackLayout>
+    </ScrollView>
+</Page>

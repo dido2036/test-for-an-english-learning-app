@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Learn English" />
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Today's Lesson" class="h2 mb-2" />
+            <CardView class="lesson-card m-2">
+                <StackLayout>
+                    <Image src="~/images/lesson-banner.jpg" stretch="aspectFill" height="150" />
+                    <StackLayout class="p-3">
+                        <Label text="Common Business Idioms" class="h3" />
+                        <Label text="Learn essential business expressions" class="body" textWrap="true" />
+                        <Button text="Start Learning" tap="{{ startLesson }}" class="btn btn-primary mt-2" />
+                    </StackLayout>
+                </StackLayout>
+            </CardView>
+
+            <Label text="Daily Tips" class="h2 mt-4 mb-2" />
+            <ListView items="{{ dailyTips }}" class="list-group">
+                <ListView.itemTemplate>
+                    <StackLayout class="list-group-item">
+                        <Label text="{{ title }}" class="h4" />
+                        <Label text="{{ description }}" textWrap="true" class="body" />
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</Page>

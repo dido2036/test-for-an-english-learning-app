@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Quiz" />
+    <GridLayout rows="auto, *">
+        <StackLayout row="0" class="p-4">
+            <Label text="Choose Quiz Type" class="h2" />
+        </StackLayout>
+        <ScrollView row="1">
+            <WrapLayout>
+                <Repeater items="{{ quizTypes }}">
+                    <Repeater.itemTemplate>
+                        <GridLayout columns="*" rows="*" class="quiz-card m-2" tap="{{ startQuiz }}">
+                            <StackLayout class="p-3">
+                                <Label text="{{ icon }}" class="fas quiz-icon" />
+                                <Label text="{{ name }}" class="h4 text-center" />
+                                <Label text="{{ description }}" textWrap="true" class="body text-center" />
+                            </StackLayout>
+                        </GridLayout>
+                    </Repeater.itemTemplate>
+                </Repeater>
+            </WrapLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>

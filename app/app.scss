@@ -1,0 +1,59 @@
+@import '@nativescript/theme/core';
+@import '@nativescript/theme/default';
+
+// Custom styles
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+.quiz-card {
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 10;
+    elevation: 3;
+    margin: 8;
+}
+
+.quiz-icon {
+    font-size: 32;
+    text-align: center;
+    color: #007AFF;
+    margin-bottom: 8;
+}
+
+.lesson-card {
+    background-color: #ffffff;
+    border-radius: 10;
+    elevation: 3;
+}
+
+.h2 {
+    font-size: 24;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.h3 {
+    font-size: 20;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.h4 {
+    font-size: 16;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.body {
+    font-size: 14;
+    color: #7f8c8d;
+}
+
+.btn-primary {
+    background-color: #007AFF;
+    color: #ffffff;
+    border-radius: 5;
+    padding: 12;
+}

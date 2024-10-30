@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabView androidTabsPosition="bottom">
+    <TabViewItem title="Learn" ios:systemIcon="16" android:iconSource="res://baseline_school_black_24">
+        <Frame defaultPage="views/learn/learn-page" />
+    </TabViewItem>
+    <TabViewItem title="Quiz" ios:systemIcon="18" android:iconSource="res://baseline_quiz_black_24">
+        <Frame defaultPage="views/quiz/quiz-page" />
+    </TabViewItem>
+    <TabViewItem title="Profile" ios:systemIcon="28" android:iconSource="res://baseline_person_black_24">
+        <Frame defaultPage="views/profile/profile-page" />
+    </TabViewItem>
+</TabView>
